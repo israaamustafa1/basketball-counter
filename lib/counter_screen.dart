@@ -68,9 +68,9 @@ class _CounterScreenState extends State<CounterScreen> {
                     ),
                     const SizedBox(height: 30),
                     
-                    // --- الحاوية الرئيسية (العرض 320) ---
+                   
                     Container(
-                      width: 330, // تم تغيير العرض إلى 320
+                      width: 330,
                       height: 300,
                       decoration: BoxDecoration(
                         color: const Color.fromARGB(36, 255, 255, 255),
@@ -81,12 +81,12 @@ class _CounterScreenState extends State<CounterScreen> {
                       ),
                       child: Row(
                         children: [
-                          // Team A Column
+                          
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsets.symmetric(
                                 vertical: 20,
-                                horizontal: 6, // قللنا البادينج الجانبي قليلاً
+                                horizontal: 6,
                               ),
                               child: Column(
                                 mainAxisAlignment:
@@ -94,7 +94,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                 children: [
                                   Container(
                                     alignment: Alignment.center,
-                                    width: 120, // تعديل العرض يدويًا لـ 115
+                                    width: 120,
                                     height: 40,
                                     decoration: BoxDecoration(
                                       color: const Color(0xffFFD6E7),
@@ -105,7 +105,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                       style: TextStyle(
                                         fontFamily: 'Font2',
                                         fontWeight: FontWeight.w500,
-                                        fontSize: 18, // تعديل بسيط لقطر الخط
+                                        fontSize: 18, 
                                         color: Color.fromARGB(
                                           255,
                                           145,
@@ -117,7 +117,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                   ),
                                   Container(
                                     alignment: Alignment.center,
-                                    width: 120, // تعديل العرض يدويًا لـ 115
+                                    width: 120, 
                                     height: 115,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(70, 255, 255, 255),
@@ -136,7 +136,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                       style: const TextStyle(
                                         fontWeight: FontWeight.w900,
                                         fontFamily: 'Font2',
-                                        fontSize: 58, // تعديل حجم الرقم ليتناسب مع الحجم الجديد
+                                        fontSize: 58, 
                                         color: Color.fromARGB(
                                           255,
                                           255,
@@ -172,12 +172,12 @@ class _CounterScreenState extends State<CounterScreen> {
                               color: Color.fromARGB(205, 255, 255, 255),
                             ),
                           ),
-                          // Team B Column
+                          
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsets.symmetric(
                                 vertical: 20,
-                                horizontal: 6, // قللنا البادينج الجانبي قليلاً
+                                horizontal: 6, اً
                               ),
                               child: Column(
                                 mainAxisAlignment:
@@ -185,7 +185,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                 children: [
                                   Container(
                                     alignment: Alignment.center,
-                                    width: 120, // تعديل العرض يدويًا لـ 115
+                                    width: 120, 
                                     height: 40,
                                     decoration: BoxDecoration(
                                       color: const Color(0xffFFD6E7),
@@ -208,7 +208,7 @@ class _CounterScreenState extends State<CounterScreen> {
                                   ),
                                   Container(
                                     alignment: Alignment.center,
-                                    width: 120, // تعديل العرض يدويًا لـ 115
+                                    width: 120, 
                                     height: 115,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(70, 255, 255, 255),
@@ -299,13 +299,13 @@ class _CounterScreenState extends State<CounterScreen> {
     );
   }
 
-  // تعديل حجم أزرار إضافة النقاط يدويًا لتناسب العرض الجديد
+ 
   Widget _buildScoreButton(String text, VoidCallback onPressed) {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         padding: EdgeInsets.zero,
-        minimumSize: const Size(34, 34), // تم تعديل الحجم من 36 إلى 32
+        minimumSize: const Size(34, 34), 
         backgroundColor: const Color.fromARGB(255, 170, 97, 128),
         shape: const CircleBorder(),
       ),
@@ -313,7 +313,7 @@ class _CounterScreenState extends State<CounterScreen> {
         text,
         style: const TextStyle(
           color: Colors.white,
-          fontSize: 16, // تعديل الخط لـ 14
+          fontSize: 16, 
           fontFamily: 'Font2',
           fontWeight: FontWeight.bold,
         ),
